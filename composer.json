@@ -1,0 +1,22 @@
+{
+    "name": "paulvl/helpers",
+    "description": "Package with useful helpers",
+    "keywords": ["helpers", "php"],
+    "license": "MIT",
+    "type": "package",
+    "authors": [
+        {
+            "name": "Paul Vidal",
+            "email": "paul.vidal.lujan@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "PaulVL\\Helpers\\": "src/"
+        }
+    }
+}
