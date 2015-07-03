@@ -1,6 +1,6 @@
 {
     "name": "paulvl/helpers",
-    "description": "Package with useful helpers",
+    "description": "Useful PHP helpers",
     "keywords": ["helpers", "php"],
     "license": "MIT",
     "type": "package",
