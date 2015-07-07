@@ -59,4 +59,23 @@ class StringHelper
 		}
 		return trim( $string );
 	}
+
+	/**
+	 * Replace last ocurrence of string on subject
+	 * @param  [type] $search  [description]
+	 * @param  [type] $replace [description]
+	 * @param  [type] $subject [description]
+	 * @return [type]          [description]
+	 */
+	public static function str_lreplace($search, $replace, $subject)
+	{
+	    $pos = strrpos($subject, $search);
+
+	    if($pos !== false)
+	    {
+	        $subject = substr_replace($subject, $replace, $pos, strlen($search));
+	    }
+
+	    return $subject;
+	}
 }
