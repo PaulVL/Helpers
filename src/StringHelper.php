@@ -78,4 +78,26 @@ class StringHelper
 
 	    return $subject;
 	}
+
+	/**
+	 * Return true if subject is empty or contains only blank spaces.
+	 * @param  [type] $subject [description]
+	 * @return [type]          [description]
+	 */
+	public static function is_empty($subject)
+	{
+	    $subject = trim($subject);
+	    return ($subject == '') ? true : false;
+	}
+
+	/**
+	 * Return null if subject is empty or contains only blank spaces.
+	 * @param  [type] $subject [description]
+	 * @return [type]          [description]
+	 */
+	public static function empty_to_null($subject)
+	{
+	    $subject = trim($subject);
+	    return ($subject == '') ? null : $subject;
+	}
 }
