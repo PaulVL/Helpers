@@ -100,4 +100,5 @@ class StringHelper
 	    $subject = trim($subject);
 	    return ($subject == '') ? null : $subject;
 	}
+	
 }
